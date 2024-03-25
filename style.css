@@ -48,12 +48,48 @@ body {
     margin-left: 0;
 }
 
-#btn-wsecund {
+body div div a button {
     width: 90%;
     height: 9.8rem;
     margin-bottom: 10%;
     border: 1px solid #000;
     border-radius: 10px; 
+}
+
+#search-btn {
+    background-color: #fff7a1;
+}
+
+#add-btn {
+    background-color: #70bd77;
+}
+
+#remove-btn {
+    background-color: #f05252;
+}
+
+#search-btn:hover {
+    background-color: #fcec5e;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+#add-btn:hover {
+    background-color: #40c44b;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+#remove-btn:hover {
+    background-color: #f13636;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+#back-btn:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
+    border: 2px solid #000;
 }
 
 #icon-arm {
@@ -68,5 +104,5 @@ body {
     width: 80%;
     height: 99%;
     border: 1px solid #000;
-    border-radius: 20px;
+    border-radius: 10px;
 }
