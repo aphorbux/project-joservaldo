@@ -50,17 +50,7 @@ body {
 
 #btn-wsecund {
     width: 90%;
-    height: 135px;
-    margin-bottom: 10%;
-    border: 1px solid #000;
-    border-radius: 10px; 
-}
-
-
-#btn-wsecund-return {
-    width: 90%;
-    height: 135px;
-    transform: scaleX(-1);
+    height: 9.8rem;
     margin-bottom: 10%;
     border: 1px solid #000;
     border-radius: 10px; 
@@ -68,11 +58,15 @@ body {
 
 #icon-arm {
     width: 100px;
+    transform: scaleX(-1);
 }
 
 .painel-secund {
     position: relative;
-    width: 600px;
-    top: -10px;
+    bottom: 46.5rem;
+    left: 9rem;
+    width: 80%;
+    height: 99%;
     border: 1px solid #000;
+    border-radius: 20px;
 }
