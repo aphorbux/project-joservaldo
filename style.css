@@ -19,7 +19,7 @@ body {
 #btn-main {
     width: 700px;
     height: 700px;
-    margin-top: 7rem;
+    margin: 17% auto;
     background-color: #beeff3;
     border: 2px solid #000;
     border-radius: 20px;
@@ -53,7 +53,7 @@ body {
 
 body div div a button {
     width: 90%;
-    height: 6.5rem;
+    height: 9.2rem;
     margin: 6.5% 0% 6.5% 0%;
     border: 1px solid #000;
     border-radius: 10px;
@@ -117,6 +117,7 @@ body div div a button {
 .painel-secund {
     position: relative;
     display: flex;
+    justify-content: center;
     width: 80%;
     height: 99%;
     border: 1px solid #000;
@@ -127,16 +128,17 @@ body div div a button {
     width: 95%;
     height: 15%;
     display: grid;
+    justify-content: space-between;
     align-items: center;
     grid-template-columns: auto auto auto;
     position: absolute;
-    gap: 10px;
     margin-top: 2%;
     border-radius: 10px;
     background-color: #000;
     border: 1px solid #000;
-    justify-content: center;
-    padding: 10px 0 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 10px;
 }
 
 .item-stock div {
@@ -148,6 +150,113 @@ body div div a button {
     padding-left: 5px;
     padding-right: 5px;
     border: 1px solid #000;
-    font-size: 330%;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .item-stock {
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 1830px) {
+
+    .item-stock {
+        letter-spacing: 8px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+
+    .item-stock {
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+
+    .item-stock {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+
+    .item-stock div {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 1360px) and (max-height: 768px) {
+
+    #btn-main {
+        height: 500px;
+        width: 500px;
+    }
+
+    #icon-main {
+        width: 500px;
+    }
+
+    body div div a button {
+        width: 16rem;
+        height: 7.2rem;
+        margin: 6.5% 0% 6.5% 0%;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+
+    .item-stock div {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+
+    .item-stock div {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+
+    .item-stock div {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .item-stock {
+        letter-spacing: 0px;
+    }
+
+    .item-stock div {
+        font-size: 37px;
+    }
 }
