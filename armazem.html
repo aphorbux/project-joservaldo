@@ -10,13 +10,50 @@
     <div class="painel-main">
         <div class="btns-acoes">
             <a href="home.html"><button id="back-btn"><img src="prompt_suggestion_FILL0_wght500_GRAD0_opsz24.svg" id="icon-back"></button></a>
-            <a href="#"><button id="search-btn"><img src="manage_search_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"></button></a>
-            <a href="#"><button id="add-btn"><img src="add_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"></button></a>
-            <a href="#"><button id="remove-btn"><img src="remove_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"></button></a>
+            <div><a href="#"><button id="search-btn"><img src="manage_search_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"></button></a></div>
+            <div class="popup" onclick="myFunction()"><a href="#"><button id="add-btn"><img src="add_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"><span class="popupbutton">
+                <div class="bar-box">
+                    <img src="barcode_scanner_FILL0_wght400_GRAD0_opsz24.svg" id="barcode-icon">
+                    <input type="text">
+                </div>
+                <div class="add-box">
+                    <img src="add_FILL0_wght400_GRAD0_opsz24.svg" id="add-part">
+                    <input type="number">
+                </div>
+                <div class="button-conf-dec">
+                    <input type="button" id="button-confirm">
+                    <img src="recommend_FILL0_wght400_GRAD0_opsz24.svg" id="icon-decline">
+                    <input type="button" id="button-decline">
+                    <img src="recommend_FILL0_wght400_GRAD0_opsz24.svg" id="icon-confirm">
+                </div>
+            </span></button></a></div>
+            <div><a href="#"><button id="remove-btn"><img src="remove_FILL0_wght400_GRAD0_opsz24.svg" id="icon-btn"></button></a></div>
         </div>
         <div class="painel-secund">
-            <p>HI</p>
+            <div class="item-stock1">
+                <div class = "codBar">
+                    testBar
+                </div>
+                <div class = "codUnit">
+                    testUnity
+                </div>
+                <div class = "codPric">
+                    testPrice
+                </div>
+            </div>
+            <div class="item-stock2">
+                <div class = "codBar">
+                    testBar
+                </div>
+                <div class = "codUnit">
+                    testUnity
+                </div>
+                <div class = "codPric">
+                    testPrice
+                </div>
+            </div>
         </div>
     </div>
+    <script src="code.js"></script>
 </body>
 </html>
