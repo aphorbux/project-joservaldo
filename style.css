@@ -52,9 +52,9 @@ body {
 }
 
 body div div a button {
-    width: 90%;
-    height: 9.2rem;
-    margin: 6.5% 0% 6.5% 0%;
+    width: 16.5rem;
+    height: 9.5rem;
+    margin: 6.5% 0 6.5% 0;
     border: 1px solid #000;
     border-radius: 10px;
 }
@@ -114,6 +114,113 @@ body div div a button {
     width: 100px;
 }
 
+.popup {
+    position: relative;
+}
+
+.popup .popupbutton {
+    position: absolute;
+    display: flex;
+    background-color: #d3d3d3;
+    width: 700px;
+    height: 450px;
+    right: -240%;
+    bottom: -10%;
+    z-index: 1;
+    border: 1px solid gray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.bar-box input {
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #dfdfdf;
+    width: 500px;
+    height: 75px;
+    top: 33px;
+    left: 137px;
+    font-size: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#barcode-icon {
+    position: absolute;
+    width: 20%;
+    left: 10px;
+}
+
+.add-box input {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #dfdfdf;
+    width: 500px;
+    height: 75px;
+    top: 200px;
+    left: 170px;
+    font-size: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#add-part {
+    position: absolute;
+    width: 200px;
+    top: 135px;
+    right: 515px;
+}
+
+.button-conf-dec input {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#button-confirm {
+    position: absolute;
+    top: 300px;
+    right: 310px;
+}
+
+#icon-confirm {
+    position: absolute;
+    width: 100px;
+    top: 315px;
+    right: 324px;
+    z-index: 1;
+}
+
+#button-decline {
+    position: absolute;
+    top: 300px;
+    right: 130px;
+}
+
+#icon-decline {
+    position: absolute;
+    width: 100px;
+    transform: scaleY(-1);
+    top: 315px;
+    right: 144px;
+    z-index: 1;
+}
+
 .painel-secund {
     position: relative;
     display: flex;
@@ -124,7 +231,7 @@ body div div a button {
     border-radius: 10px;
 }
 
-.item-stock {
+.item-stock1 {
     width: 95%;
     height: 15%;
     display: grid;
@@ -136,19 +243,42 @@ body div div a button {
     border-radius: 10px;
     background-color: #000;
     border: 1px solid #000;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px 5px 10px;
     letter-spacing: 10px;
 }
 
-.item-stock div {
+.item-stock1 div {
     background-color: #fff;
     border-radius: 10px;
-    margin-top: -6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: -6px -5px 0 -6px;
+    padding: 16px 14px 16px 14px;
+    border: 1px solid #000;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-stock2 {
+    width: 95%;
+    height: 15%;
+    top: 16%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 10px 5px 10px;
+    letter-spacing: 10px;
+}
+
+.item-stock2 div {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: -6px -5px 0 -6px;
+    padding: 16px 14px 16px 14px;
     border: 1px solid #000;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -156,46 +286,50 @@ body div div a button {
 
 @media screen and (max-width: 1920px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 10px;
     }
 }
 
 @media screen and (max-width: 1830px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 8px;
     }
 }
 
 @media screen and (max-width: 1750px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 5px;
     }
 }
 
 @media screen and (max-width: 1640px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 3px;
     }
 }
 
 @media screen and (max-width: 1560px) {
 
-    .item-stock {
+    .item-stock1 {
+        letter-spacing: 0px;
+    }
+
+    .item-stock2 {
         letter-spacing: 0px;
     }
 }
 
 @media screen and (max-width: 1450px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 0px;
     }
 
-    .item-stock div {
+    .item-stock1 div {
         font-size: 45px;
     }
 }
@@ -219,44 +353,44 @@ body div div a button {
         border-radius: 10px;
     }
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 0px;
     }
 
-    .item-stock div {
+    .item-stock1 div {
         font-size: 37px;
     }
 }
 
 @media screen and (max-width: 1350px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 0px;
     }
 
-    .item-stock div {
+    .item-stock1 div {
         font-size: 43px;
     }
 }
 
 @media screen and (max-width: 1310px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 0px;
     }
 
-    .item-stock div {
+    .item-stock1 div {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 1250px) {
 
-    .item-stock {
+    .item-stock1 {
         letter-spacing: 0px;
     }
 
-    .item-stock div {
+    .item-stock1 div {
         font-size: 37px;
     }
 }
