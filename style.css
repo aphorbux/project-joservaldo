@@ -51,7 +51,7 @@ body {
     margin-left: 0;
 }
 
-body div div a button {
+#back-btn {
     width: 16.5rem;
     height: 9.5rem;
     margin: 6.5% 0 6.5% 0;
@@ -61,18 +61,38 @@ body div div a button {
 
 #search-btn {
     background-color: #fff7a1;
+    width: 16.5rem;
+    height: 9.5rem;
+    margin: 6.5% 0 6.5% 0;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 #add-btn {
     background-color: #70bd77;
+    width: 16.5rem;
+    height: 9.5rem;
+    margin: 6.5% 0 6.5% 0;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 #remove-btn {
     background-color: #f05252;
+    width: 16.5rem;
+    height: 9.5rem;
+    margin: 6.5% 0 6.5% 0;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 #confirm-btn {
     background-color: #00c2a8;
+    width: 16.5rem;
+    height: 9.5rem;
+    margin: 6.5% 0 6.5% 0;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 #search-btn:hover {
@@ -182,20 +202,15 @@ body div div a button {
     right: 515px;
 }
 
-.button-conf-dec input {
+#button-confirm {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    background-color: #40c44b;
     width: 130px;
     height: 130px;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-#button-confirm {
-    position: absolute;
-    top: 300px;
-    right: 310px;
+    z-index: 1;
 }
 
 #icon-confirm {
@@ -203,13 +218,18 @@ body div div a button {
     width: 100px;
     top: 315px;
     right: 324px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #button-decline {
     position: absolute;
-    top: 300px;
-    right: 130px;
+    top: 40px;
+    left: 700px;
+    background-color: #f13636;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 #icon-decline {
@@ -218,7 +238,7 @@ body div div a button {
     transform: scaleY(-1);
     top: 315px;
     right: 144px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .painel-secund {
